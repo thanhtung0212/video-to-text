@@ -6,25 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tung Nguyen</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="box">
-      <div id="container">
-        <div id="state0">
-          <div class="nav">
-            <input class="input" name="chonfile" type="file" id="file" />
-          </div>
-          <p id="p1">😉 <span></span></p>
-          <div id="video1" class="button1">
-            <video controls loop></video>
-          </div>
-          <div class="btn">
-            <button id="play" type="button" onclick="play()">xem</button>
+    <div class="col-12 d-flex justify-content-center">
+      <div class="box p-3">
+        <div id="container">
+          <div id="state0">
+            <div class="nav">
+              <input class="input" name="chonfile" type="file" id="file" />
+            </div>
+            <p class="mt-4" id="p1">😉 <span></span></p>
+            <div id="video1" class="button1">
+              <video controls loop></video>
+            </div>
+            <div class="btn w-100">
+              <button id="play" type="button" onclick="play()">xem</button>
+            </div>
           </div>
         </div>
+        <div id="stage"></div>
       </div>
-      <div id="stage"></div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
